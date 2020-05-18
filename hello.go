@@ -1,8 +1,6 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,5 +12,5 @@ func main() {
 		})
 	})
 
-	http.ListenAndServe(":3000", r)
+	r.Run(":3000")
 }
